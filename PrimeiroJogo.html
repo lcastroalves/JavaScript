@@ -1,0 +1,17 @@
+<meta charset = "UTF-8">
+<h2> Será que você acerta o número que pensei? </h2>
+<input type="text" id="numero"/>
+<input   type="submit" id="advinhar" value="Compare com o número que eu estou pensando!"/>
+<script>
+var segredo = 8
+var caixaDoNumero = document.getElementById("numero");
+var botaoClicado = function(){
+	if(segredo == caixaDoNumero.value) {
+		alert("Parabéns! Você acertou!");
+	} else {
+		alert("Infelizmente você errou...");
+	}
+}
+var botaoAdvinhar = document.getElementById("advinhar");
+botaoAdvinhar.onclick = botaoClicado;
+</script>
