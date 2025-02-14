@@ -1,0 +1,28 @@
+<h2> Troca dos valores de duas variaveis </h2>
+<script>
+alert("Troca dos valores de duas variáveis");
+var a, b, aux;
+a = prompt("Digite um número");
+b = prompt("Digite outro");
+document.write("Números antes da troca: a = " + a + " e b = " + b + "<br>");
+aux = a;
+a = b;
+b = aux;
+document.write("Números depois da troca: a = " a + " e b = " + b);
+</script>
+<h2> Contagem </h2>
+<script>
+alert("Contagem");
+var cont, numero, nota
+cont = 0
+numero = 0
+var n = Number(prompt("Qual o número de notas?"));
+while(numero < n){
+	numero++
+	nota = Number(prompt("Digite a nota"));
+	if(nota >= 50){
+		cont++
+	}
+}
+document.write("O número de aprovações é de: " + cont);
+</script>
